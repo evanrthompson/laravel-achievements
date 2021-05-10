@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Assada\Achievements;
 
+use Assada\Achievements\Model\AchievementDetails;
 use Assada\Achievements\Model\AchievementProgress;
 
 /**
@@ -61,4 +62,16 @@ abstract class AchievementChain implements CanAchieve
             $instance->setProgressToAchiever($achiever, $points);
         }
     }
+
+    /**
+     * Gets the details class for this achievement.
+     *
+     * @return AchievementDetails
+     */
+    public function getModel()
+    {
+       return;
+
+    }
+
 }

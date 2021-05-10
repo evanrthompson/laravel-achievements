@@ -21,4 +21,20 @@ class DummyClass extends Achievement
      * A small description for the achievement
      */
     public $description = '';
+
+    /*
+     * A small description for the achievement
+     */
+    public $description = '';
+
+    /*
+     * Points required to unlock achievement
+     */
+     public $points = '';
+
+    /**
+     * The (optional) sorting order for this achievement.
+     */
+     public $order = 0;
+
 }

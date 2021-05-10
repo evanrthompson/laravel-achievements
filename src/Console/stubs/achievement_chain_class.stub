@@ -17,6 +17,10 @@ class DummyClass extends AchievementChain
      */
     public function chain(): array
     {
-        return [];
+        return [
+         // new DummyClass1(),
+         // new DummyClass100(),
+         // new DummyClass1000(),
+        ];
     }
 }

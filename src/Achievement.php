@@ -38,6 +38,12 @@ abstract class Achievement implements CanAchieve
      */
     public $points = 1;
 
+    /**
+     * The (optional) sorting order for this achievement.
+     */
+    public $order = 0;
+
+
     /*
      * Whether this is a secret achievement or not.
      */
@@ -109,6 +115,7 @@ abstract class Achievement implements CanAchieve
             $model->description = $this->description;
             $model->points = $this->points;
             $model->secret = $this->secret;
+            $model->order = $this->order;
 
             // Syncs
             $model->save();
